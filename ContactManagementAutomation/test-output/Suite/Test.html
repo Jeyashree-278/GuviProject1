@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 01 22:04:21 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>188 seconds (188849 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.contact.tests.SessionAndNavigationTest.verifyBackButtonDoesNotRestorePostLogoutSession()'><b>verifyBackButtonDoesNotRestorePostLogoutSession</b><br>Test class: com.contact.tests.SessionAndNavigationTest<br>Test method: verifyBackButtonDoesNotRestorePostLogoutSession</td>
+<td><div><pre>java.lang.AssertionError: User accessed contact list using BACK after logout! expected [true] but found [false]
+	at com.contact.tests.SessionAndNavigationTest.verifyBackButtonDoesNotRestorePostLogoutSession(SessionAndNavigationTest.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486717726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486717726'><pre>java.lang.AssertionError: User accessed contact list using BACK after logout! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.contact.tests.SessionAndNavigationTest.verifyBackButtonDoesNotRestorePostLogoutSession(SessionAndNavigationTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>6</td>
+<td>com.contact.tests.SessionAndNavigationTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.contact.tests.UIandResponsivenessTest.testFormFieldAlignment()'><b>testFormFieldAlignment</b><br>Test class: com.contact.tests.UIandResponsivenessTest<br>Test method: testFormFieldAlignment</td>
+<td><div><pre>java.lang.AssertionError: Field alignment on Add Contact form is incorrect! expected [true] but found [false]
+	at com.contact.tests.UIandResponsivenessTest.testFormFieldAlignment(UIandResponsivenessTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438055051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438055051'><pre>java.lang.AssertionError: Field alignment on Add Contact form is incorrect! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.contact.tests.UIandResponsivenessTest.testFormFieldAlignment(UIandResponsivenessTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.contact.tests.UIandResponsivenessTest@7e057f43</td></tr>
+<tr>
+<td title='com.contact.tests.InputValidationAndSecurityTest.testMaxCharacterLimitForFirstName()'><b>testMaxCharacterLimitForFirstName</b><br>Test class: com.contact.tests.InputValidationAndSecurityTest<br>Test method: Test Max Character Limit For FirstName</td>
+<td><div><pre>java.lang.AssertionError: First Name field accept long input! expected [false] but found [true]
+	at com.contact.tests.InputValidationAndSecurityTest.testMaxCharacterLimitForFirstName(InputValidationAndSecurityTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1068602508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1068602508'><pre>java.lang.AssertionError: First Name field accept long input! expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.contact.tests.InputValidationAndSecurityTest.testMaxCharacterLimitForFirstName(InputValidationAndSecurityTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.contact.tests.InputValidationAndSecurityTest@268f106e</td></tr>
+<tr>
+<td title='com.contact.tests.InputValidationAndSecurityTest.testUnicodeSupport()'><b>testUnicodeSupport</b><br>Test class: com.contact.tests.InputValidationAndSecurityTest<br>Test method:  Test UnicodeSupport</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [470a7d8135f88edaae617f13c67b15e7, sendKeysToElement {value=[Ljava.lang.CharSequence;@1f641fb7, id=f.FEC697445619820A12BAA7F8287D9C83.d.D204BCBE5523BA9AF03CACAE82AAF19B.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58611}, goog:processID: 3232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58611/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (470a7d8135f88edaae617f13c67b15e7)] -&gt; id: street1]
+Session ID: 470a7d8135f88edaae617f13c67b15e7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.contact.pages.BasePage.type(BasePage.java:32)
+	at com.contact.pages.AddContactPage.isUnicodeAcceptedInAddress(AddContactPage.java:76)
+	at com.contact.tests.InputValidationAndSecurityTest.testUnicodeSupport(InputValidationAndSecurityTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582967668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1582967668'><pre>org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [470a7d8135f88edaae617f13c67b15e7, sendKeysToElement {value=[Ljava.lang.CharSequence;@1f641fb7, id=f.FEC697445619820A12BAA7F8287D9C83.d.D204BCBE5523BA9AF03CACAE82AAF19B.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58611}, goog:processID: 3232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58611/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (470a7d8135f88edaae617f13c67b15e7)] -&gt; id: street1]
+Session ID: 470a7d8135f88edaae617f13c67b15e7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.contact.pages.BasePage.type(BasePage.java:32)
+	at com.contact.pages.AddContactPage.isUnicodeAcceptedInAddress(AddContactPage.java:76)
+	at com.contact.tests.InputValidationAndSecurityTest.testUnicodeSupport(InputValidationAndSecurityTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.contact.tests.InputValidationAndSecurityTest@268f106e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.contact.tests.AddContactTest.validateDuplicateContactDetails()'><b>validateDuplicateContactDetails</b><br>Test class: com.contact.tests.AddContactTest<br>Test method: Verify adding duplicate contact details</td>
+<td></td>
+<td>5</td>
+<td>com.contact.tests.AddContactTest@6fa51cd4</td></tr>
+<tr>
+<td title='com.contact.tests.UIandResponsivenessTest.testDeleteContactShowsSuccessMessage()'><b>testDeleteContactShowsSuccessMessage</b><br>Test class: com.contact.tests.UIandResponsivenessTest<br>Test method: testDeleteContactShowsSuccessMessage</td>
+<td></td>
+<td>7</td>
+<td>com.contact.tests.UIandResponsivenessTest@7e057f43</td></tr>
+<tr>
+<td title='com.contact.tests.AddContactTest.addContactwithMissingFields()'><b>addContactwithMissingFields</b><br>Test class: com.contact.tests.AddContactTest<br>Test method: Verify adding contact with missing required fields</td>
+<td></td>
+<td>5</td>
+<td>com.contact.tests.AddContactTest@6fa51cd4</td></tr>
+<tr>
+<td title='com.contact.tests.AddContactTest.verifyPhoneFieldValidation()'><b>verifyPhoneFieldValidation</b><br>Test class: com.contact.tests.AddContactTest<br>Test method: Verify phone field accepts only numeric input</td>
+<td></td>
+<td>4</td>
+<td>com.contact.tests.AddContactTest@6fa51cd4</td></tr>
+<tr>
+<td title='com.contact.tests.LoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.contact.tests.LoginTest<br>Test method: Verify login with valid credentials</td>
+<td></td>
+<td>3</td>
+<td>com.contact.tests.LoginTest@402c4085</td></tr>
+<tr>
+<td title='com.contact.tests.DeleteContactTest.deleteContactDetails()'><b>deleteContactDetails</b><br>Test class: com.contact.tests.DeleteContactTest<br>Test method: Verify deleting a contact</td>
+<td></td>
+<td>7</td>
+<td>com.contact.tests.DeleteContactTest@5b247367</td></tr>
+<tr>
+<td title='com.contact.tests.AddContactTest.addContactWithValidDetails()'><b>addContactWithValidDetails</b><br>Test class: com.contact.tests.AddContactTest<br>Test method: Verify adding contact with all valid details</td>
+<td></td>
+<td>6</td>
+<td>com.contact.tests.AddContactTest@6fa51cd4</td></tr>
+<tr>
+<td title='com.contact.tests.SignUpTest.signUpwithBlankFields()'><b>signUpwithBlankFields</b><br>Test class: com.contact.tests.SignUpTest<br>Test method: Verify sign-up with blankfields</td>
+<td></td>
+<td>3</td>
+<td>com.contact.tests.SignUpTest@663c9e7a</td></tr>
+<tr>
+<td title='com.contact.tests.EditContactTest.cancelEditShouldNotSave()'><b>cancelEditShouldNotSave</b><br>Test class: com.contact.tests.EditContactTest</td>
+<td></td>
+<td>10</td>
+<td>com.contact.tests.EditContactTest@1750fbeb</td></tr>
+<tr>
+<td title='com.contact.tests.DeleteContactTest.verifyDeleteConfirmationAlert()'><b>verifyDeleteConfirmationAlert</b><br>Test class: com.contact.tests.DeleteContactTest<br>Test method: verify Delete Confirmation Alert</td>
+<td></td>
+<td>7</td>
+<td>com.contact.tests.DeleteContactTest@5b247367</td></tr>
+<tr>
+<td title='com.contact.tests.SessionAndNavigationTest.verifyLogoutRedirectsToLoginPage()'><b>verifyLogoutRedirectsToLoginPage</b><br>Test class: com.contact.tests.SessionAndNavigationTest<br>Test method: Verify logout redirects to login page</td>
+<td></td>
+<td>7</td>
+<td>com.contact.tests.SessionAndNavigationTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.contact.tests.EditContactTest.editExistingContact()'><b>editExistingContact</b><br>Test class: com.contact.tests.EditContactTest</td>
+<td></td>
+<td>18</td>
+<td>com.contact.tests.EditContactTest@1750fbeb</td></tr>
+<tr>
+<td title='com.contact.tests.EditContactTest.validationErrorOnEmptyLastName()'><b>validationErrorOnEmptyLastName</b><br>Test class: com.contact.tests.EditContactTest</td>
+<td></td>
+<td>15</td>
+<td>com.contact.tests.EditContactTest@1750fbeb</td></tr>
+<tr>
+<td title='com.contact.tests.SessionAndNavigationTest.verifyLoginStateOnRefresh()'><b>verifyLoginStateOnRefresh</b><br>Test class: com.contact.tests.SessionAndNavigationTest<br>Test method: Verify login state on refresh</td>
+<td></td>
+<td>4</td>
+<td>com.contact.tests.SessionAndNavigationTest@6e9a5ed8</td></tr>
+<tr>
+<td title='com.contact.tests.LoginTest.loginWithInvalidEmailFormat()'><b>loginWithInvalidEmailFormat</b><br>Test class: com.contact.tests.LoginTest<br>Test method: Verify login with Invalid email id format</td>
+<td></td>
+<td>2</td>
+<td>com.contact.tests.LoginTest@402c4085</td></tr>
+<tr>
+<td title='com.contact.tests.LoginTest.verifyPasswordMasking()'><b>verifyPasswordMasking</b><br>Test class: com.contact.tests.LoginTest<br>Test method: Verify that password field masks user input</td>
+<td></td>
+<td>1</td>
+<td>com.contact.tests.LoginTest@402c4085</td></tr>
+<tr>
+<td title='com.contact.tests.LoginTest.loginWithEmptyFields()'><b>loginWithEmptyFields</b><br>Test class: com.contact.tests.LoginTest<br>Test method: Verify login with empty fields</td>
+<td></td>
+<td>2</td>
+<td>com.contact.tests.LoginTest@402c4085</td></tr>
+<tr>
+<td title='com.contact.tests.LoginTest.loginWithInvalidPassword()'><b>loginWithInvalidPassword</b><br>Test class: com.contact.tests.LoginTest<br>Test method: Verify login with invalid password</td>
+<td></td>
+<td>12</td>
+<td>com.contact.tests.LoginTest@402c4085</td></tr>
+<tr>
+<td title='com.contact.tests.AddContactTest.validateFormReset()'><b>validateFormReset</b><br>Test class: com.contact.tests.AddContactTest<br>Test method: Verify form resets after contact is added</td>
+<td></td>
+<td>4</td>
+<td>com.contact.tests.AddContactTest@6fa51cd4</td></tr>
+<tr>
+<td title='com.contact.tests.SignUpTest.signUpwithIncorrectEmailFormat()'><b>signUpwithIncorrectEmailFormat</b><br>Test class: com.contact.tests.SignUpTest<br>Test method: Verify email format validation during sign-up</td>
+<td></td>
+<td>3</td>
+<td>com.contact.tests.SignUpTest@663c9e7a</td></tr>
+<tr>
+<td title='com.contact.tests.SignUpTest.signUpWithValidInputs()'><b>signUpWithValidInputs</b><br>Test class: com.contact.tests.SignUpTest<br>Test method: Verify sign-up with valid inputs</td>
+<td></td>
+<td>4</td>
+<td>com.contact.tests.SignUpTest@663c9e7a</td></tr>
+<tr>
+<td title='com.contact.tests.SignUpTest.signUpwithAlreadyRegisteredEmail()'><b>signUpwithAlreadyRegisteredEmail</b><br>Test class: com.contact.tests.SignUpTest<br>Test method: Verify sign-up with already registered email</td>
+<td></td>
+<td>3</td>
+<td>com.contact.tests.SignUpTest@663c9e7a</td></tr>
+<tr>
+<td title='com.contact.tests.SessionAndNavigationTest.verifyLoginIsRequiredToAccessContactList()'><b>verifyLoginIsRequiredToAccessContactList</b><br>Test class: com.contact.tests.SessionAndNavigationTest<br>Test method:  VerifyLoginIsRequiredToAccessContactList</td>
+<td></td>
+<td>1</td>
+<td>com.contact.tests.SessionAndNavigationTest@6e9a5ed8</td></tr>
+</table><p>
+</body>
+</html>

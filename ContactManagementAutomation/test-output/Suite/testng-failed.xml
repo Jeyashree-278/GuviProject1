@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.contact.tests.UIandResponsivenessTest">
+        <methods>
+          <include name="testFormFieldAlignment"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.contact.tests.UIandResponsivenessTest -->
+      <class name="com.contact.tests.SessionAndNavigationTest">
+        <methods>
+          <include name="verifyBackButtonDoesNotRestorePostLogoutSession"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.contact.tests.SessionAndNavigationTest -->
+      <class name="com.contact.tests.InputValidationAndSecurityTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testUnicodeSupport"/>
+          <include name="setUp"/>
+          <include name="testMaxCharacterLimitForFirstName"/>
+        </methods>
+      </class> <!-- com.contact.tests.InputValidationAndSecurityTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

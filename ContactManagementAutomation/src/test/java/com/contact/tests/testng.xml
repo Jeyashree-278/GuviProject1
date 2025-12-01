@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name="com.contact.tests.SignUpTest"/>
+    <class name="com.contact.tests.LoginTest"/>
+      <class name="com.contact.tests.AddContactTest"/>
+      <class name="com.contact.tests.EditContactTest"/>
+      <class name="com.contact.tests.DeleteContactTest"/>
+      <class name="com.contact.tests.InputValidationAndSecurityTest"/>
+      <class name="com.contact.tests.SessionAndNavigationTest"/>
+      <class name="com.contact.tests.UIandResponsivenessTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
