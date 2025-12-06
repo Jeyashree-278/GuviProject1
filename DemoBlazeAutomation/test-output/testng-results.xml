@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="22" passed="17" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-06T16:04:52 IST" name="Suite" finished-at="2025-12-06T16:08:39 IST" duration-ms="227428">
+    <groups>
+    </groups>
+    <test started-at="2025-12-06T16:04:52 IST" name="Chrome Test" finished-at="2025-12-06T16:08:39 IST" duration-ms="227428">
+      <class name="com.demo.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:15 IST" name="setUp" finished-at="2025-12-06T16:05:16 IST" duration-ms="1427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithEmptyFields()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:16 IST" name="loginWithEmptyFields" description="Verify login with empty fields" finished-at="2025-12-06T16:05:19 IST" duration-ms="3078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:19 IST" name="tearDown" finished-at="2025-12-06T16:05:20 IST" duration-ms="425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:20 IST" name="setUp" finished-at="2025-12-06T16:05:21 IST" duration-ms="1324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidPassword()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:21 IST" name="loginWithInvalidPassword" description="Verify login with invalid password" finished-at="2025-12-06T16:05:26 IST" duration-ms="4449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:26 IST" name="tearDown" finished-at="2025-12-06T16:05:26 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:26 IST" name="setUp" finished-at="2025-12-06T16:05:28 IST" duration-ms="1452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:28 IST" name="loginWithValidCredentials" description="Verify login with valid credentials" finished-at="2025-12-06T16:05:32 IST" duration-ms="4885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:32 IST" name="tearDown" finished-at="2025-12-06T16:05:33 IST" duration-ms="420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:33 IST" name="setUp" finished-at="2025-12-06T16:05:34 IST" duration-ms="1388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyPasswordMasking()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:34 IST" name="verifyPasswordMasking" description="Verify that password field masks user input" finished-at="2025-12-06T16:05:36 IST" duration-ms="1700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPasswordMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LoginTest@2053d869]" started-at="2025-12-06T16:05:36 IST" name="tearDown" finished-at="2025-12-06T16:05:36 IST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.LoginTest -->
+      <class name="com.demo.tests.OrderTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:06:52 IST" name="setUp" finished-at="2025-12-06T16:06:54 IST" duration-ms="1337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeOrderEmptyForm()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:06:54 IST" name="placeOrderEmptyForm" description="Place order empty form" finished-at="2025-12-06T16:07:15 IST" duration-ms="21422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderEmptyForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:15 IST" name="tearDown" finished-at="2025-12-06T16:07:16 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:16 IST" name="setUp" finished-at="2025-12-06T16:07:17 IST" duration-ms="1412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="placeOrderValidDetails()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:17 IST" name="placeOrderValidDetails" description="place order with valid details" finished-at="2025-12-06T16:07:23 IST" duration-ms="5574" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5d3c410aa260aa82120444301b92369, clickElement {id=f.7BC0029C34EE9B9CBDE09F1F372B924A.d.C46B70A69365D88ED04AAAAB1A376823.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54435}, goog:processID: 29928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54435/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5d3c410aa260aa82120444301b92369)] -> link text: Sony vaio i5]
+Session ID: b5d3c410aa260aa82120444301b92369]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5d3c410aa260aa82120444301b92369, clickElement {id=f.7BC0029C34EE9B9CBDE09F1F372B924A.d.C46B70A69365D88ED04AAAAB1A376823.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54435}, goog:processID: 29928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54435/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5d3c410aa260aa82120444301b92369)] -> link text: Sony vaio i5]
+Session ID: b5d3c410aa260aa82120444301b92369
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.demo.pages.ProductPage.selectProduct(ProductPage.java:53)
+at com.demo.tests.OrderTest.placeOrderValidDetails(OrderTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placeOrderValidDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:23 IST" name="tearDown" finished-at="2025-12-06T16:07:24 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:24 IST" name="setUp" finished-at="2025-12-06T16:07:25 IST" duration-ms="1347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyOrderConfirmationPopup()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:25 IST" name="verifyOrderConfirmationPopup" description="Verify order confirmation popup" finished-at="2025-12-06T16:07:46 IST" duration-ms="21015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderConfirmationPopup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.OrderTest@14555e0a]" started-at="2025-12-06T16:07:46 IST" name="tearDown" finished-at="2025-12-06T16:07:47 IST" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.OrderTest -->
+      <class name="com.demo.tests.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:04:52 IST" name="setUp" finished-at="2025-12-06T16:04:55 IST" duration-ms="3221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySignupWithEmptyFields()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:04:55 IST" name="verifySignupWithEmptyFields" description="verify Signup With empty fields" finished-at="2025-12-06T16:05:00 IST" duration-ms="4882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:00 IST" name="tearDown" finished-at="2025-12-06T16:05:00 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:00 IST" name="setUp" finished-at="2025-12-06T16:05:02 IST" duration-ms="1474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySignupWithExistingUsername()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:02 IST" name="verifySignupWithExistingUsername" description="verify Signup With existing username" finished-at="2025-12-06T16:05:07 IST" duration-ms="5429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupWithExistingUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:07 IST" name="tearDown" finished-at="2025-12-06T16:05:07 IST" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:07 IST" name="setUp" finished-at="2025-12-06T16:05:09 IST" duration-ms="1442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySignupWithUniqueCredentials()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:09 IST" name="verifySignupWithUniqueCredentials" description="verify Signup With Unique Credentials" finished-at="2025-12-06T16:05:14 IST" duration-ms="5448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupWithUniqueCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.SignUpTest@1e683a3e]" started-at="2025-12-06T16:05:14 IST" name="tearDown" finished-at="2025-12-06T16:05:15 IST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.SignUpTest -->
+      <class name="com.demo.tests.LogoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.LogoutTest@3c73951]" started-at="2025-12-06T16:08:12 IST" name="setUp" finished-at="2025-12-06T16:08:13 IST" duration-ms="1430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLogoutFunctionality()[pri:0, instance:com.demo.tests.LogoutTest@3c73951]" started-at="2025-12-06T16:08:13 IST" name="verifyLogoutFunctionality" description="Verify logout functionality" finished-at="2025-12-06T16:08:26 IST" duration-ms="13159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.LogoutTest@3c73951]" started-at="2025-12-06T16:08:26 IST" name="tearDown" finished-at="2025-12-06T16:08:27 IST" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.LogoutTest -->
+      <class name="com.demo.tests.UIAndUXValidationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:27 IST" name="setUp" finished-at="2025-12-06T16:08:28 IST" duration-ms="1432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyActionButtonsVisibility()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:28 IST" name="verifyActionButtonsVisibility" description="verifyActionButtonsVisibility" finished-at="2025-12-06T16:08:33 IST" duration-ms="5063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyActionButtonsVisibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:33 IST" name="tearDown" finished-at="2025-12-06T16:08:34 IST" duration-ms="342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:34 IST" name="setUp" finished-at="2025-12-06T16:08:35 IST" duration-ms="817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyAlertAndPopupStyle()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:35 IST" name="verifyAlertAndPopupStyle" finished-at="2025-12-06T16:08:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertAndPopupStyle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:35 IST" name="tearDown" finished-at="2025-12-06T16:08:35 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:35 IST" name="setUp" finished-at="2025-12-06T16:08:36 IST" duration-ms="729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyFontConsistencyAcrossPages()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:36 IST" name="verifyFontConsistencyAcrossPages" description="verifyFontConsistencyAcrossPages" finished-at="2025-12-06T16:08:39 IST" duration-ms="3220" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5ac9c80961d4691f4fbdc8c8483f62e, clickElement {id=f.597CFD8121C6CDD0370294891B9BE9CC.d.281AF5D452871F61A96C3B6C9287FFB1.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50653}, goog:processID: 7924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5ac9c80961d4691f4fbdc8c8483f62e)] -> xpath: //a[normalize-space()='Cart']]
+Session ID: b5ac9c80961d4691f4fbdc8c8483f62e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5ac9c80961d4691f4fbdc8c8483f62e, clickElement {id=f.597CFD8121C6CDD0370294891B9BE9CC.d.281AF5D452871F61A96C3B6C9287FFB1.e.128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50653}, goog:processID: 7924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b5ac9c80961d4691f4fbdc8c8483f62e)] -> xpath: //a[normalize-space()='Cart']]
+Session ID: b5ac9c80961d4691f4fbdc8c8483f62e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.demo.pages.BasePage.click(BasePage.java:30)
+at com.demo.pages.HomePage.clickCart(HomePage.java:70)
+at com.demo.tests.UIAndUXValidationTest.verifyFontConsistencyAcrossPages(UIAndUXValidationTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFontConsistencyAcrossPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.UIAndUXValidationTest@3d5c822d]" started-at="2025-12-06T16:08:39 IST" name="tearDown" finished-at="2025-12-06T16:08:39 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.UIAndUXValidationTest -->
+      <class name="com.demo.tests.ProductNavigationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:07:47 IST" name="setUp" finished-at="2025-12-06T16:07:48 IST" duration-ms="1516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomeNavigation()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:07:48 IST" name="verifyHomeNavigation" description="Verify Home Navigation" finished-at="2025-12-06T16:07:53 IST" duration-ms="4918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomeNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:07:53 IST" name="tearDown" finished-at="2025-12-06T16:07:53 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:07:53 IST" name="setUp" finished-at="2025-12-06T16:07:55 IST" duration-ms="1255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNavbarNavigation()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:07:55 IST" name="verifyNavbarNavigation" description="verifyNavbarNavigation" finished-at="2025-12-06T16:08:01 IST" duration-ms="6083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavbarNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:08:01 IST" name="tearDown" finished-at="2025-12-06T16:08:01 IST" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:08:01 IST" name="setUp" finished-at="2025-12-06T16:08:02 IST" duration-ms="1204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyProductNavigation()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:08:02 IST" name="verifyProductNavigation" description=" Verify product Navigation" finished-at="2025-12-06T16:08:08 IST" duration-ms="5369" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d2f666e4deb5b64ee6c35a33a7abb5, clickElement {id=f.041F85BE3B33710384CBB856CF69762E.d.1F1F8F7FD274B90C5628F60FB9210AF1.e.178}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58590}, goog:processID: 14092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58590/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c9d2f666e4deb5b64ee6c35a33a7abb5)] -> link text: Sony vaio i5]
+Session ID: c9d2f666e4deb5b64ee6c35a33a7abb5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d2f666e4deb5b64ee6c35a33a7abb5, clickElement {id=f.041F85BE3B33710384CBB856CF69762E.d.1F1F8F7FD274B90C5628F60FB9210AF1.e.178}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58590}, goog:processID: 14092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58590/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c9d2f666e4deb5b64ee6c35a33a7abb5)] -> link text: Sony vaio i5]
+Session ID: c9d2f666e4deb5b64ee6c35a33a7abb5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.demo.pages.ProductPage.selectProduct(ProductPage.java:53)
+at com.demo.tests.ProductNavigationTest.verifyProductNavigation(ProductNavigationTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.ProductNavigationTest@4bb33f74]" started-at="2025-12-06T16:08:08 IST" name="tearDown" finished-at="2025-12-06T16:08:08 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.ProductNavigationTest -->
+      <class name="com.demo.tests.HorizontalScrollingTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.HorizontalScrollingTest@759d26fb]" started-at="2025-12-06T16:08:08 IST" name="setUp" finished-at="2025-12-06T16:08:10 IST" duration-ms="1366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyNoHorizontalScrollingOnMobile()[pri:0, instance:com.demo.tests.HorizontalScrollingTest@759d26fb]" started-at="2025-12-06T16:08:10 IST" name="verifyNoHorizontalScrollingOnMobile" finished-at="2025-12-06T16:08:11 IST" duration-ms="1845" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Horizontal scrolling detected on mobile view! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Horizontal scrolling detected on mobile view! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at com.demo.tests.HorizontalScrollingTest.verifyNoHorizontalScrollingOnMobile(HorizontalScrollingTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoHorizontalScrollingOnMobile -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.HorizontalScrollingTest@759d26fb]" started-at="2025-12-06T16:08:11 IST" name="tearDown" finished-at="2025-12-06T16:08:12 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.HorizontalScrollingTest -->
+      <class name="com.demo.tests.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:05:36 IST" name="setUp" finished-at="2025-12-06T16:05:38 IST" duration-ms="1248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addMultipleProducts()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:05:38 IST" name="addMultipleProducts" description=" add multiple products" finished-at="2025-12-06T16:06:01 IST" duration-ms="23006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:01 IST" name="tearDown" finished-at="2025-12-06T16:06:01 IST" duration-ms="559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:01 IST" name="setUp" finished-at="2025-12-06T16:06:02 IST" duration-ms="1353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductToCart()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:02 IST" name="addProductToCart" description="Add product to cart" finished-at="2025-12-06T16:06:11 IST" duration-ms="8663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:11 IST" name="tearDown" finished-at="2025-12-06T16:06:12 IST" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:12 IST" name="setUp" finished-at="2025-12-06T16:06:13 IST" duration-ms="1232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeProductFromCart()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:13 IST" name="removeProductFromCart" description=" Remove product from Cart" finished-at="2025-12-06T16:06:45 IST" duration-ms="31712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:45 IST" name="tearDown" finished-at="2025-12-06T16:06:45 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:45 IST" name="setUp" finished-at="2025-12-06T16:06:47 IST" duration-ms="1436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="viewCartWithAddedProducts()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:47 IST" name="viewCartWithAddedProducts" description=" View cart with added Products" finished-at="2025-12-06T16:06:52 IST" duration-ms="5388" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97929f4c85e3a15d291e154e567531cf, clickElement {id=f.3F0AC33227EB6CBFDD3D0E5B8D9DE713.d.CF83F0425FAE51A5DFEA1562B51CB7CB.e.152}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49518}, goog:processID: 22812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49518/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (97929f4c85e3a15d291e154e567531cf)] -> link text: Sony vaio i5]
+Session ID: 97929f4c85e3a15d291e154e567531cf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97929f4c85e3a15d291e154e567531cf, clickElement {id=f.3F0AC33227EB6CBFDD3D0E5B8D9DE713.d.CF83F0425FAE51A5DFEA1562B51CB7CB.e.152}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49518}, goog:processID: 22812, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49518/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (97929f4c85e3a15d291e154e567531cf)] -> link text: Sony vaio i5]
+Session ID: 97929f4c85e3a15d291e154e567531cf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.demo.pages.ProductPage.selectProduct(ProductPage.java:53)
+at com.demo.tests.CartTest.viewCartWithAddedProducts(CartTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCartWithAddedProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demo.tests.CartTest@7a419da4]" started-at="2025-12-06T16:06:52 IST" name="tearDown" finished-at="2025-12-06T16:06:52 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demo.tests.CartTest -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Suite -->
+</testng-results>
