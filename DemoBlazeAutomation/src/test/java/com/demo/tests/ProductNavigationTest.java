@@ -43,7 +43,7 @@ import org.testng.annotations.Test;
 		       
 		        LoginPage login = new LoginPage(driver);
 			    login.open(baseUrl);
-				login.login(ConfigReader.get("admin.username"), ConfigReader.get("admin.password"));
+				login.login(ConfigReader.get("ins"), ConfigReader.get("ins"));
 				login.waitForLoginModalToClose();
 		        // Click Home from navbar
 		        home.clickHome();
@@ -59,7 +59,7 @@ import org.testng.annotations.Test;
 		       
 		        LoginPage login = new LoginPage(driver);
 			    login.open(baseUrl);
-				login.login(ConfigReader.get("admin.username"), ConfigReader.get("admin.password"));
+				login.login(ConfigReader.get("ins"), ConfigReader.get("ins"));
 				login.waitForLoginModalToClose();
 		        // Click Home from navbar
 		        home.clickHome();

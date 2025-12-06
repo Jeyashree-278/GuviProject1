@@ -63,7 +63,7 @@ public class CartTest extends BaseTest{
 
         LoginPage login = new LoginPage(driver);
         login.open(baseUrl);
-		login.login("Sathyadev", "Sathyadev");
+		login.login("Jshree", "Jshree");
 		login.waitForLoginModalToClose();
 		 ProductPage product1 = new ProductPage(driver);
 		 product1.selectProduct("Laptops", "Sony vaio i5");
