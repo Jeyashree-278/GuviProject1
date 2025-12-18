@@ -8,11 +8,540 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,066</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Chrome Test</a></td><td class="num">17</td><td class="num attn">6</td><td class="num">0</td><td class="num attn">12</td><td class="num">528,065</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FireFox Tests</a></td><td class="num">16</td><td class="num attn">7</td><td class="num">0</td><td class="num attn">12</td><td class="num">582,327</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">33</th><th class="num attn">13</th><th class="num">0</th><th class="num attn">24</th><th class="num">1,110,392</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.banking.tests.NavigationTest</td><td><a href="#m0">validateContactSuccessPopup</a></td><td rowspan="1">1766071684998</td><td rowspan="1">2216</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.banking.tests.AccountTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1766078773710</td><td rowspan="1">1</td></tr><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.banking.tests.CustomerSupportTest</td><td><a href="#m1">submitSupportFormWithEmptyFields</a></td><td rowspan="1">1766079111779</td><td rowspan="1">989</td></tr><tr class="failedodd"><td rowspan="4">com.banking.tests.FundTransferTest</td><td><a href="#m2">transferFundsSuccessfully</a></td><td rowspan="1">1766078953996</td><td rowspan="1">21024</td></tr><tr class="failedodd"><td><a href="#m3">transferLargeOrDecimalAmount</a></td><td rowspan="1">1766078993681</td><td rowspan="1">3915</td></tr><tr class="failedodd"><td><a href="#m4">transferWithInsufficientBalance</a></td><td rowspan="1">1766079062114</td><td rowspan="1">3550</td></tr><tr class="failedodd"><td><a href="#m5">validateTransferConfirmationAndUpdatedBalance</a></td><td rowspan="1">1766079072383</td><td rowspan="1">6535</td></tr><tr class="failedeven"><td rowspan="5">com.banking.tests.LoginTest</td><td><a href="#m6">incorrectPasswordTest</a></td><td rowspan="1">1766078664419</td><td rowspan="1">35865</td></tr><tr class="failedeven"><td><a href="#m7">invalidEmailFormatTest</a></td><td rowspan="1">1766078701361</td><td rowspan="1">19736</td></tr><tr class="failedeven"><td><a href="#m8">unregisteredUserTest</a></td><td rowspan="1">1766078726623</td><td rowspan="1">11148</td></tr><tr class="failedeven"><td><a href="#m9">verifyRememberMeFunctionality</a></td><td rowspan="1">1766078748507</td><td rowspan="1">17320</td></tr><tr class="failedeven"><td><a href="#m10">verifySessionTimeoutDueToInactivity</a></td><td rowspan="1">1766078766958</td><td rowspan="1">5681</td></tr><tr class="failedodd"><td rowspan="2">com.banking.tests.SupportTest</td><td><a href="#m11">testSubmitFormWithEmptyFields</a></td><td rowspan="1">1766079089895</td><td rowspan="1">3889</td></tr><tr class="failedodd"><td><a href="#m12">testSubmitFormWithValidData</a></td><td rowspan="1">1766079094820</td><td rowspan="1">5211</td></tr><tr><th colspan="4">Chrome Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="11">com.banking.tests.AccountTest</td><td><a href="#m13">setup</a></td><td rowspan="5">1766078774602</td><td rowspan="5">0</td></tr><tr class="skippedeven"><td><a href="#m14">setup</a></td></tr><tr class="skippedeven"><td><a href="#m15">setup</a></td></tr><tr class="skippedeven"><td><a href="#m16">setup</a></td></tr><tr class="skippedeven"><td><a href="#m17">setup</a></td></tr><tr class="skippedeven"><td><a href="#m18">tearDown</a></td><td rowspan="6">1766078777239</td><td rowspan="6">0</td></tr><tr class="skippedeven"><td><a href="#m19">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m20">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m21">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m22">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m23">tearDown</a></td></tr><tr><th colspan="4">Chrome Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">com.banking.tests.AccountTest</td><td><a href="#m24">validateTransactionHistoryColumns</a></td><td rowspan="1">1766078773713</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m25">validateTransactionListFields</a></td><td rowspan="1">1766078774603</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m26">validateUpdatedBalanceAfterTransaction</a></td><td rowspan="1">1766078775483</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m27">viewCheckingAccountSummary</a></td><td rowspan="1">1766078776366</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m28">viewFullTransactionHistory</a></td><td rowspan="1">1766078777237</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m29">viewSavingsAccountSummary</a></td><td rowspan="1">1766078778145</td><td rowspan="1">0</td></tr><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.banking.tests.CustomerSupportTest</td><td><a href="#m30">openCustomerSupportForm</a></td><td rowspan="1">1766079105598</td><td rowspan="1">469</td></tr><tr class="passedeven"><td><a href="#m31">submitSupportFormWithValidDetails</a></td><td rowspan="1">1766079119012</td><td rowspan="1">1427</td></tr><tr class="passedeven"><td><a href="#m32">verifySupportFormSuccessMessage</a></td><td rowspan="1">1766079126873</td><td rowspan="1">1437</td></tr><tr class="passedodd"><td rowspan="2">com.banking.tests.FundTransferTest</td><td><a href="#m33">transferToSameAccount</a></td><td rowspan="1">1766079034817</td><td rowspan="1">8697</td></tr><tr class="passedodd"><td><a href="#m34">transferWithEmptyFields</a></td><td rowspan="1">1766079050171</td><td rowspan="1">6619</td></tr><tr class="passedeven"><td rowspan="4">com.banking.tests.LoanRequestTest</td><td><a href="#m35">submitLoanRequestExceedingLimit</a></td><td rowspan="1">1766078806552</td><td rowspan="1">3507</td></tr><tr class="passedeven"><td><a href="#m36">submitLoanRequestWithMissingInfo</a></td><td rowspan="1">1766078823181</td><td rowspan="1">639</td></tr><tr class="passedeven"><td><a href="#m37">submitLoanRequestWithValidDetails</a></td><td rowspan="1">1766078840750</td><td rowspan="1">2938</td></tr><tr class="passedeven"><td><a href="#m38">verifyLoanRequestStatusAndResult</a></td><td rowspan="1">1766078897014</td><td rowspan="1">1303</td></tr><tr class="passedodd"><td rowspan="3">com.banking.tests.LoginTest</td><td><a href="#m39">emptyFieldsTest</a></td><td rowspan="1">1766078657788</td><td rowspan="1">5616</td></tr><tr class="passedodd"><td><a href="#m40">passwordMaskedTest</a></td><td rowspan="1">1766078722025</td><td rowspan="1">3499</td></tr><tr class="passedodd"><td><a href="#m41">validLoginTest</a></td><td rowspan="1">1766078738884</td><td rowspan="1">8642</td></tr><tr class="passedeven"><td rowspan="4">com.banking.tests.NavigationTest</td><td><a href="#m42">navigateThroughTopNavLinks</a></td><td rowspan="1">1766079135976</td><td rowspan="1">2652</td></tr><tr class="passedeven"><td><a href="#m43">validateButtonsVisibilityAndClickability</a></td><td rowspan="1">1766079156974</td><td rowspan="1">3621</td></tr><tr class="passedeven"><td><a href="#m44">validateContactSuccessPopup</a></td><td rowspan="1">1766079166284</td><td rowspan="1">5790</td></tr><tr class="passedeven"><td><a href="#m45">verifyLogoRedirectsToHome</a></td><td rowspan="1">1766079179912</td><td rowspan="1">4169</td></tr><tr class="passedodd"><td rowspan="1">com.banking.tests.SupportTest</td><td><a href="#m46">testOpenSupportForm</a></td><td rowspan="1">1766079080003</td><td rowspan="1">8855</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FireFox Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.banking.tests.AccountTest</td><td><a href="#m47">setup</a></td><td rowspan="1">1766078817738</td><td rowspan="1">0</td></tr><tr class="failedodd"><td rowspan="1">com.banking.tests.LoanRequestTest</td><td><a href="#m48">setup</a></td><td rowspan="1">1766078953082</td><td rowspan="1">33519</td></tr><tr><th colspan="4">FireFox Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.banking.tests.FundTransferTest</td><td><a href="#m49">transferFundsSuccessfully</a></td><td rowspan="1">1766079000951</td><td rowspan="1">7979</td></tr><tr class="failedeven"><td><a href="#m50">transferLargeOrDecimalAmount</a></td><td rowspan="1">1766079020663</td><td rowspan="1">3627</td></tr><tr class="failedeven"><td><a href="#m51">transferWithInsufficientBalance</a></td><td rowspan="1">1766079073010</td><td rowspan="1">3475</td></tr><tr class="failedeven"><td><a href="#m52">validateTransferConfirmationAndUpdatedBalance</a></td><td rowspan="1">1766079084907</td><td rowspan="1">6564</td></tr><tr class="failedodd"><td rowspan="1">com.banking.tests.LoanRequestTest</td><td><a href="#m53">submitLoanRequestExceedingLimit</a></td><td rowspan="1">1766078864984</td><td rowspan="1">89</td></tr><tr class="failedeven"><td rowspan="5">com.banking.tests.LoginTest</td><td><a href="#m54">incorrectPasswordTest</a></td><td rowspan="1">1766078680022</td><td rowspan="1">33148</td></tr><tr class="failedeven"><td><a href="#m55">invalidEmailFormatTest</a></td><td rowspan="1">1766078725406</td><td rowspan="1">10584</td></tr><tr class="failedeven"><td><a href="#m56">unregisteredUserTest</a></td><td rowspan="1">1766078746105</td><td rowspan="1">10408</td></tr><tr class="failedeven"><td><a href="#m57">verifyRememberMeFunctionality</a></td><td rowspan="1">1766078770266</td><td rowspan="1">14901</td></tr><tr class="failedeven"><td><a href="#m58">verifySessionTimeoutDueToInactivity</a></td><td rowspan="1">1766078791075</td><td rowspan="1">21896</td></tr><tr class="failedodd"><td rowspan="2">com.banking.tests.SupportTest</td><td><a href="#m59">testSubmitFormWithEmptyFields</a></td><td rowspan="1">1766079110993</td><td rowspan="1">4345</td></tr><tr class="failedodd"><td><a href="#m60">testSubmitFormWithValidData</a></td><td rowspan="1">1766079119606</td><td rowspan="1">5013</td></tr><tr><th colspan="4">FireFox Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="11">com.banking.tests.AccountTest</td><td><a href="#m61">setup</a></td><td rowspan="5">1766078820979</td><td rowspan="5">0</td></tr><tr class="skippedeven"><td><a href="#m62">setup</a></td></tr><tr class="skippedeven"><td><a href="#m63">setup</a></td></tr><tr class="skippedeven"><td><a href="#m64">setup</a></td></tr><tr class="skippedeven"><td><a href="#m65">setup</a></td></tr><tr class="skippedeven"><td><a href="#m66">tearDown</a></td><td rowspan="6">1766078820982</td><td rowspan="6">0</td></tr><tr class="skippedeven"><td><a href="#m67">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m68">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m69">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m70">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m71">tearDown</a></td></tr><tr class="skippedodd"><td rowspan="1">com.banking.tests.LoanRequestTest</td><td><a href="#m72">tearDown</a></td><td rowspan="1">1766078986603</td><td rowspan="1">0</td></tr><tr><th colspan="4">FireFox Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">com.banking.tests.AccountTest</td><td><a href="#m73">validateTransactionHistoryColumns</a></td><td rowspan="1">1766078817738</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m74">validateTransactionListFields</a></td><td rowspan="1">1766078820979</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m75">validateUpdatedBalanceAfterTransaction</a></td><td rowspan="1">1766078824456</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m76">viewCheckingAccountSummary</a></td><td rowspan="1">1766078828101</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m77">viewFullTransactionHistory</a></td><td rowspan="1">1766078831383</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m78">viewSavingsAccountSummary</a></td><td rowspan="1">1766078834715</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.banking.tests.LoanRequestTest</td><td><a href="#m79">verifyLoanRequestStatusAndResult</a></td><td rowspan="1">1766078986601</td><td rowspan="1">0</td></tr><tr><th colspan="4">FireFox Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.banking.tests.CustomerSupportTest</td><td><a href="#m80">openCustomerSupportForm</a></td><td rowspan="1">1766079134440</td><td rowspan="1">560</td></tr><tr class="passedeven"><td><a href="#m81">submitSupportFormWithEmptyFields</a></td><td rowspan="1">1766079148139</td><td rowspan="1">4942</td></tr><tr class="passedeven"><td><a href="#m82">submitSupportFormWithValidDetails</a></td><td rowspan="1">1766079165391</td><td rowspan="1">3800</td></tr><tr class="passedeven"><td><a href="#m83">verifySupportFormSuccessMessage</a></td><td rowspan="1">1766079179702</td><td rowspan="1">1312</td></tr><tr class="passedodd"><td rowspan="2">com.banking.tests.FundTransferTest</td><td><a href="#m84">transferToSameAccount</a></td><td rowspan="1">1766079038864</td><td rowspan="1">8823</td></tr><tr class="passedodd"><td><a href="#m85">transferWithEmptyFields</a></td><td rowspan="1">1766079056815</td><td rowspan="1">6739</td></tr><tr class="passedeven"><td rowspan="2">com.banking.tests.LoanRequestTest</td><td><a href="#m86">submitLoanRequestWithMissingInfo</a></td><td rowspan="1">1766078905746</td><td rowspan="1">1517</td></tr><tr class="passedeven"><td><a href="#m87">submitLoanRequestWithValidDetails</a></td><td rowspan="1">1766078948277</td><td rowspan="1">694</td></tr><tr class="passedodd"><td rowspan="3">com.banking.tests.LoginTest</td><td><a href="#m88">emptyFieldsTest</a></td><td rowspan="1">1766078659847</td><td rowspan="1">16912</td></tr><tr class="passedodd"><td><a href="#m89">passwordMaskedTest</a></td><td rowspan="1">1766078739754</td><td rowspan="1">2984</td></tr><tr class="passedodd"><td><a href="#m90">validLoginTest</a></td><td rowspan="1">1766078759996</td><td rowspan="1">6806</td></tr><tr class="passedeven"><td rowspan="4">com.banking.tests.NavigationTest</td><td><a href="#m91">navigateThroughTopNavLinks</a></td><td rowspan="1">1766079190068</td><td rowspan="1">3129</td></tr><tr class="passedeven"><td><a href="#m92">validateButtonsVisibilityAndClickability</a></td><td rowspan="1">1766079203140</td><td rowspan="1">3613</td></tr><tr class="passedeven"><td><a href="#m93">validateContactSuccessPopup</a></td><td rowspan="1">1766079216257</td><td rowspan="1">1217</td></tr><tr class="passedeven"><td><a href="#m94">verifyLogoRedirectsToHome</a></td><td rowspan="1">1766079233422</td><td rowspan="1">4302</td></tr><tr class="passedodd"><td rowspan="1">com.banking.tests.SupportTest</td><td><a href="#m95">testOpenSupportForm</a></td><td rowspan="1">1766079095891</td><td rowspan="1">11004</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.banking.tests.NavigationTest#validateContactSuccessPopup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome Test</h2><h3 id="m0">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.banking.tests.CustomerSupportTest#submitSupportFormWithEmptyFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Form submitted successfully with empty fields expected [true] but found [false]
+	at com.banking.tests.CustomerSupportTest.submitSupportFormWithEmptyFields(CustomerSupportTest.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.banking.tests.FundTransferTest#transferFundsSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Not enough accounts to select different accounts
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:32)
+	at com.banking.tests.FundTransferTest.transferFundsSuccessfully(FundTransferTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.banking.tests.FundTransferTest#transferLargeOrDecimalAmount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.transferLargeOrDecimalAmount(FundTransferTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.banking.tests.FundTransferTest#transferWithInsufficientBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.transferWithInsufficientBalance(FundTransferTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.banking.tests.FundTransferTest#validateTransferConfirmationAndUpdatedBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.validateTransferConfirmationAndUpdatedBalance(FundTransferTest.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.banking.tests.LoginTest#incorrectPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.incorrectPasswordTest(LoginTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.banking.tests.LoginTest#invalidEmailFormatTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.invalidEmailFormatTest(LoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.banking.tests.LoginTest#unregisteredUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.unregisteredUserTest(LoginTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.banking.tests.LoginTest#verifyRememberMeFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: rememberMe (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\aravi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61189}, goog:processID: 35256, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61189/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c37ed6d33d7d300e81ce55b795597ceb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.banking.utils.WaitUtils.forClickable(WaitUtils.java:23)
+	at com.banking.pages.BasePage.click(BasePage.java:21)
+	at com.banking.pages.LoginPage.loginWithRememberMe(LoginPage.java:46)
+	at com.banking.tests.LoginTest.verifyRememberMeFunctionality(LoginTest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.banking.tests.LoginTest#verifySessionTimeoutDueToInactivity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: User not redirected to login page after session timeout expected [true] but found [false]
+	at com.banking.tests.LoginTest.verifySessionTimeoutDueToInactivity(LoginTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.banking.tests.SupportTest#testSubmitFormWithEmptyFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.submitButton&quot; is null
+	at com.banking.pages.SupportPage.submitForm(SupportPage.java:49)
+	at com.banking.tests.SupportTest.testSubmitFormWithEmptyFields(SupportTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.banking.tests.SupportTest#testSubmitFormWithValidData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;this.nameField&quot; is null
+	at com.banking.pages.SupportPage.fillForm(SupportPage.java:38)
+	at com.banking.tests.SupportTest.testSubmitFormWithValidData(SupportTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.banking.tests.AccountTest#validateTransactionHistoryColumns</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.banking.tests.AccountTest#validateTransactionListFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.banking.tests.AccountTest#validateUpdatedBalanceAfterTransaction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.banking.tests.AccountTest#viewCheckingAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.banking.tests.AccountTest#viewFullTransactionHistory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.banking.tests.AccountTest#viewSavingsAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.banking.tests.CustomerSupportTest#openCustomerSupportForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.banking.tests.CustomerSupportTest#submitSupportFormWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.banking.tests.CustomerSupportTest#verifySupportFormSuccessMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.banking.tests.FundTransferTest#transferToSameAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.banking.tests.FundTransferTest#transferWithEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.banking.tests.LoanRequestTest#submitLoanRequestExceedingLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.banking.tests.LoanRequestTest#submitLoanRequestWithMissingInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.banking.tests.LoanRequestTest#submitLoanRequestWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">com.banking.tests.LoanRequestTest#verifyLoanRequestStatusAndResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">com.banking.tests.LoginTest#emptyFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">com.banking.tests.LoginTest#passwordMaskedTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">com.banking.tests.LoginTest#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">com.banking.tests.NavigationTest#navigateThroughTopNavLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">com.banking.tests.NavigationTest#validateButtonsVisibilityAndClickability</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">com.banking.tests.NavigationTest#validateContactSuccessPopup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">com.banking.tests.NavigationTest#verifyLogoRedirectsToHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">com.banking.tests.SupportTest#testOpenSupportForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FireFox Tests</h2><h3 id="m47">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">com.banking.tests.LoanRequestTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&amp;u=https%3A//parabank.parasoft.com/parabank/index.htm&amp;c=UTF-8&amp;d=The%20server%20at%20parabank.parasoft.com%20is%20taking%20too%20long%20to%20respond.
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d129a24a-6e2e-42eb-b430-d20487cea700, get {url=https://parabank.parasoft.com/parabank/index.htm }]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0, moz:accessibilityChecks: false, moz:buildID: 20251205151434, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14628, moz:profile: C:\Users\aravi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d129a24a-6e2e-42eb-b430-d20487cea700
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.LoanRequestTest.setup(LoanRequestTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">com.banking.tests.FundTransferTest#transferFundsSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.transferFundsSuccessfully(FundTransferTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">com.banking.tests.FundTransferTest#transferLargeOrDecimalAmount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.transferLargeOrDecimalAmount(FundTransferTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">com.banking.tests.FundTransferTest#transferWithInsufficientBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.transferWithInsufficientBalance(FundTransferTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">com.banking.tests.FundTransferTest#validateTransferConfirmationAndUpdatedBalance</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 1
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:407)
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:262)
+	at com.banking.pages.TransferFundsPage.selectDifferentAccounts(TransferFundsPage.java:39)
+	at com.banking.tests.FundTransferTest.validateTransferConfirmationAndUpdatedBalance(FundTransferTest.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">com.banking.tests.LoanRequestTest#submitLoanRequestExceedingLimit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Request Loan
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [1040d9dd-1129-4999-9632-9f0d2458e0f4, findElement {using=link text, value=Request Loan}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0, moz:accessibilityChecks: false, moz:buildID: 20251205151434, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 29724, moz:profile: C:\Users\aravi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 1040d9dd-1129-4999-9632-9f0d2458e0f4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at com.banking.tests.LoanRequestTest.submitLoanRequestExceedingLimit(LoanRequestTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">com.banking.tests.LoginTest#incorrectPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.incorrectPasswordTest(LoginTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">com.banking.tests.LoginTest#invalidEmailFormatTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.invalidEmailFormatTest(LoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">com.banking.tests.LoginTest#unregisteredUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [An internal error has occurred and has been logged.] but found [The username and password could not be verified.]
+	at com.banking.tests.LoginTest.unregisteredUserTest(LoginTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">com.banking.tests.LoginTest#verifyRememberMeFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: rememberMe (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0, moz:accessibilityChecks: false, moz:buildID: 20251205151434, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 39380, moz:profile: C:\Users\aravi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ff8c9fee-99d9-429f-8368-32709e8423d4
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.banking.utils.WaitUtils.forClickable(WaitUtils.java:23)
+	at com.banking.pages.BasePage.click(BasePage.java:21)
+	at com.banking.pages.LoginPage.loginWithRememberMe(LoginPage.java:46)
+	at com.banking.tests.LoginTest.verifyRememberMeFunctionality(LoginTest.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">com.banking.tests.LoginTest#verifySessionTimeoutDueToInactivity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Unexpected confirmEx dialog detected. Performed handler &quot;dismiss&quot;: To display this page, Firefox must send information that will repeat any action (such as a search or order confirmation) that was performed earlier.
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [4dff8ca1-4e84-46f2-a534-b71407ca13f8, getCurrentUrl {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0, moz:accessibilityChecks: false, moz:buildID: 20251205151434, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8568, moz:profile: C:\Users\aravi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 4dff8ca1-4e84-46f2-a534-b71407ca13f8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:324)
+	at com.banking.tests.LoginTest.verifySessionTimeoutDueToInactivity(LoginTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">com.banking.tests.SupportTest#testSubmitFormWithEmptyFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.submitButton&quot; is null
+	at com.banking.pages.SupportPage.submitForm(SupportPage.java:49)
+	at com.banking.tests.SupportTest.testSubmitFormWithEmptyFields(SupportTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">com.banking.tests.SupportTest#testSubmitFormWithValidData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.clear()&quot; because &quot;this.nameField&quot; is null
+	at com.banking.pages.SupportPage.fillForm(SupportPage.java:38)
+	at com.banking.tests.SupportTest.testSubmitFormWithValidData(SupportTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m64">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m65">com.banking.tests.AccountTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m66">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m67">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m68">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m69">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m70">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m71">com.banking.tests.AccountTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m72">com.banking.tests.LoanRequestTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m73">com.banking.tests.AccountTest#validateTransactionHistoryColumns</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m74">com.banking.tests.AccountTest#validateTransactionListFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m75">com.banking.tests.AccountTest#validateUpdatedBalanceAfterTransaction</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m76">com.banking.tests.AccountTest#viewCheckingAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m77">com.banking.tests.AccountTest#viewFullTransactionHistory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m78">com.banking.tests.AccountTest#viewSavingsAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.AccountTest.setup(AccountTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m79">com.banking.tests.LoanRequestTest#verifyLoanRequestStatusAndResult</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=netTimeout&amp;u=https%3A//parabank.parasoft.com/parabank/index.htm&amp;c=UTF-8&amp;d=The%20server%20at%20parabank.parasoft.com%20is%20taking%20too%20long%20to%20respond.
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d129a24a-6e2e-42eb-b430-d20487cea700, get {url=https://parabank.parasoft.com/parabank/index.htm }]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 146.0, moz:accessibilityChecks: false, moz:buildID: 20251205151434, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14628, moz:profile: C:\Users\aravi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: d129a24a-6e2e-42eb-b430-d20487cea700
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.banking.pages.LoginPage.open(LoginPage.java:22)
+	at com.banking.tests.LoanRequestTest.setup(LoanRequestTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m80">com.banking.tests.CustomerSupportTest#openCustomerSupportForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m81">com.banking.tests.CustomerSupportTest#submitSupportFormWithEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m82">com.banking.tests.CustomerSupportTest#submitSupportFormWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m83">com.banking.tests.CustomerSupportTest#verifySupportFormSuccessMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m84">com.banking.tests.FundTransferTest#transferToSameAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m85">com.banking.tests.FundTransferTest#transferWithEmptyFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m86">com.banking.tests.LoanRequestTest#submitLoanRequestWithMissingInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m87">com.banking.tests.LoanRequestTest#submitLoanRequestWithValidDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m88">com.banking.tests.LoginTest#emptyFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m89">com.banking.tests.LoginTest#passwordMaskedTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m90">com.banking.tests.LoginTest#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m91">com.banking.tests.NavigationTest#navigateThroughTopNavLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m92">com.banking.tests.NavigationTest#validateButtonsVisibilityAndClickability</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m93">com.banking.tests.NavigationTest#validateContactSuccessPopup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m94">com.banking.tests.NavigationTest#verifyLogoRedirectsToHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m95">com.banking.tests.SupportTest#testOpenSupportForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
