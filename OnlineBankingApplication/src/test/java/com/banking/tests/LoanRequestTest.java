@@ -16,16 +16,14 @@ public class LoanRequestTest extends BaseTest {
 	
 	@BeforeMethod
     public void setup() {
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-
-        LoginPage login = new LoginPage(driver);
+		 LoginPage login = new LoginPage(driver);
+	   	 login.open(baseUrl);
         AccountOverviewPage overview = new AccountOverviewPage(driver);
         AccountDetailsPage details = new AccountDetailsPage(driver);
 
         login.login("Diya", "Good");
     }
-	@Test
+	@Test(description="submitLoanRequestWithValidDetails")
 	public void submitLoanRequestWithValidDetails() {
 
 	    driver.findElement(By.linkText("Request Loan")).click();
@@ -38,7 +36,7 @@ public class LoanRequestTest extends BaseTest {
 	    Assert.assertTrue(loan.isLoanApproved(),
 	            "Loan request was not approved");
 	}
-	@Test
+	@Test(description="submitLoanRequestWithMissingInfo")
 	public void submitLoanRequestWithMissingInfo() {
 
 	    driver.findElement(By.linkText("Request Loan")).click();
@@ -50,7 +48,7 @@ public class LoanRequestTest extends BaseTest {
 	            "Validation error not displayed for missing fields");
 	}
 	
-	@Test
+	@Test(description="verifyLoanRequestStatusAndResult")
 	public void verifyLoanRequestStatusAndResult() {
 
 	    driver.findElement(By.linkText("Request Loan")).click();
@@ -63,7 +61,7 @@ public class LoanRequestTest extends BaseTest {
 	    Assert.assertTrue(loan.isLoanApproved(),
 	            "Loan status/result not displayed");
 	}
-	@Test
+	@Test(description="submitLoanRequestExceedingLimit")
 	public void submitLoanRequestExceedingLimit() {
 
 	    driver.findElement(By.linkText("Request Loan")).click();

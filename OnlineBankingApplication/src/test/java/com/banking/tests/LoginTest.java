@@ -8,7 +8,7 @@ import com.banking.pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 	
-	 @Test
+	 @Test(description="validLoginTest")
 	    public void validLoginTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
 	        Assert.assertTrue(login.isAtAccountOverview(), "User not redirected to account summary!");
 	    }
 
-	    @Test
+	    @Test(description="incorrectPasswordTest")
 	    public void incorrectPasswordTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
 	        Assert.assertEquals(login.getErrorMessage(), "An internal error has occurred and has been logged.");
 	    }
 
-	    @Test
+	    @Test(description="unregisteredUserTest")
 	    public void unregisteredUserTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -35,7 +35,7 @@ public class LoginTest extends BaseTest {
 	        Assert.assertEquals(login.getErrorMessage(), "An internal error has occurred and has been logged.");
 	    }
 
-	    @Test
+	    @Test(description="emptyFieldsTest")
 	    public void emptyFieldsTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
 	        Assert.assertEquals(login.getErrorMessage(), "Please enter a username and password.");
 	    }
 
-	    @Test
+	    @Test(description="invalidEmailFormatTest")
 	    public void invalidEmailFormatTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -53,14 +53,14 @@ public class LoginTest extends BaseTest {
 	        Assert.assertEquals(login.getErrorMessage(), "An internal error has occurred and has been logged.");
 	    }
 
-	    @Test
+	    @Test(description="passwordMaskedTest")
 	    public void passwordMaskedTest() {
 	        LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
 
 	        Assert.assertTrue(login.isPasswordMasked(), "Password field is not masked!");
 	    }
-	    @Test
+	    @Test(description="verifySessionTimeoutDueToInactivity")
 	    public void verifySessionTimeoutDueToInactivity() {
 	    	LoginPage login = new LoginPage(driver);
 	    	login.open(baseUrl);
@@ -72,7 +72,7 @@ public class LoginTest extends BaseTest {
 
 	        Assert.assertTrue(driver.getCurrentUrl().contains("index"),
 	                "User not redirected to login page after session timeout");}
-	        @Test
+	        @Test(description="verifyRememberMeFunctionality")
 	        public void verifyRememberMeFunctionality() {
 	        	LoginPage login = new LoginPage(driver);
 	        	login.open(baseUrl);

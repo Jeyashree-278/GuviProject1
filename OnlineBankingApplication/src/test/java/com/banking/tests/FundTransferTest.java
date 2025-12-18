@@ -16,17 +16,16 @@ public class FundTransferTest extends BaseTest {
 	
 	@BeforeMethod
     public void setup() {
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-
-        LoginPage login = new LoginPage(driver);
+		 LoginPage login = new LoginPage(driver);
+			login = new LoginPage(driver);
+	   	 login.open(baseUrl);
         AccountOverviewPage overview = new AccountOverviewPage(driver);
         AccountDetailsPage details = new AccountDetailsPage(driver);
 
         login.login("Diya", "Good");
     }
 
-	@Test
+	@Test(description="transferFundsSuccessfully")
 	public void transferFundsSuccessfully() throws Exception {
 		Thread.sleep(3000);
 
@@ -39,7 +38,7 @@ public class FundTransferTest extends BaseTest {
 	    Assert.assertTrue(transfer.isSuccess(),
 	            "Transfer was not successful");
 	}
-	    @Test
+	    @Test(description="transferWithInsufficientBalance")
 	    
 	    public void transferWithInsufficientBalance() throws Exception {
 
@@ -55,7 +54,7 @@ public class FundTransferTest extends BaseTest {
 	                "Error not displayed for insufficient balance");
 	    
 	}
-	    @Test
+	    @Test(description="transferWithEmptyFields")
 	    public void transferWithEmptyFields() throws InterruptedException {
 
 	    	Thread.sleep(3000);
@@ -67,7 +66,7 @@ public class FundTransferTest extends BaseTest {
 	        Assert.assertTrue(transfer.isErrorDisplayed(),
 	                "Validation error not shown for empty fields");
 	    }
-	    @Test
+	    @Test(description="transferLargeOrDecimalAmount")
 	    public void transferLargeOrDecimalAmount() throws Exception {
 
 	        driver.findElement(By.linkText("Transfer Funds")).click();
@@ -82,7 +81,7 @@ public class FundTransferTest extends BaseTest {
 	                "Transfer failed for decimal amount");
 	    }
 	    
-	    @Test
+	    @Test(description="transferToSameAccount")
 	    public void transferToSameAccount() throws InterruptedException {
 	    	Thread.sleep(3000);
 
@@ -96,7 +95,7 @@ public class FundTransferTest extends BaseTest {
 	            "Neither error nor success detected for same-account transfer"
 	        );
 	    }
-	    @Test
+	    @Test(description="validateTransferConfirmationAndUpdatedBalance")
 	    public void validateTransferConfirmationAndUpdatedBalance() throws Exception {
 
 	    	AccountOverviewPage overview = new AccountOverviewPage(driver);

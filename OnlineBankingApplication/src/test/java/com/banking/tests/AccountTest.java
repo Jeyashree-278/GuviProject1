@@ -26,17 +26,15 @@ public class AccountTest extends BaseTest {
 
 	    @BeforeMethod
 	    public void setup() {
-	        driver = new ChromeDriver();
-	        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-
-	        login = new LoginPage(driver);
+	    	login = new LoginPage(driver);
+	    	 login.open(baseUrl);    
 	        overview = new AccountOverviewPage(driver);
 	        details = new AccountDetailsPage(driver);
 
 	        login.login("Diya", "Good");
 	    }
 
-	    @Test
+	    @Test(description="viewCheckingAccountSummary")
 	    public void viewCheckingAccountSummary() {
 	        overview.openFirstAccount();
 
@@ -44,14 +42,15 @@ public class AccountTest extends BaseTest {
 	        Assert.assertTrue(details.isTransactionDisplayed());
 	    }
 
-	    @Test
+	    @Test(description="viewSavingsAccountSummary")
+	    
 	    public void viewSavingsAccountSummary() {
 	        overview.openFirstAccount();
 
 	        Assert.assertTrue(details.isBalanceDisplayed());
 	        Assert.assertTrue(details.isTransactionDisplayed());
 	    }
-	    @Test
+	    @Test(description="validateUpdatedBalanceAfterTransaction")
 	    public void validateUpdatedBalanceAfterTransaction() throws Exception {
 
 	    	AccountOverviewPage overview = new AccountOverviewPage(driver);
@@ -76,7 +75,7 @@ public class AccountTest extends BaseTest {
 	                "Balance did not update after transaction");
 	    }
 	    
-	    @Test
+	    @Test(description="viewFullTransactionHistory")
 	    public void viewFullTransactionHistory() {
 
 	        AccountOverviewPage overview = new AccountOverviewPage(driver);
@@ -88,7 +87,7 @@ public class AccountTest extends BaseTest {
 	                "Transaction history table not displayed");
 	    }
 	    
-	    @Test
+	    @Test(description="validateTransactionHistoryColumns")
 	    public void validateTransactionHistoryColumns() throws InterruptedException {
 
 	        AccountOverviewPage overview = new AccountOverviewPage(driver);
@@ -98,7 +97,7 @@ public class AccountTest extends BaseTest {
 	        Assert.assertTrue(details.validateTransactionColumns(),
 	                "Transaction table does not contain Date, Transaction, and Type columns");
 	    }
-	    @Test
+	    @Test(description="validateTransactionListFields")
 	    public void validateTransactionListFields() {
 	    	 AccountOverviewPage overview = new AccountOverviewPage(driver);
 		        overview.openFirstAccount();

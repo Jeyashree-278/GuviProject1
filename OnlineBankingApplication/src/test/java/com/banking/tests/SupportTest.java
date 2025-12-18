@@ -10,7 +10,7 @@ import com.banking.pages.SupportPage;
 public class SupportTest extends BaseTest {
 	
 
-	 @Test
+	 @Test(description="testOpenSupportForm")
 	    public void testOpenSupportForm() throws InterruptedException {
 		 LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -22,7 +22,7 @@ public class SupportTest extends BaseTest {
 	                "Contact Us / Support form page did not open.");
 	    }
 
-	    @Test
+	    @Test(description="testSubmitFormWithValidData")
 	    public void testSubmitFormWithValidData() {
 	    	LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);
@@ -38,7 +38,7 @@ public class SupportTest extends BaseTest {
 	                "Success message not displayed as expected. Actual: " + successMsg);
 	    }
 
-	    @Test
+	    @Test(description="testSubmitFormWithEmptyFields")
 	    public void testSubmitFormWithEmptyFields() {
 	    	LoginPage login = new LoginPage(driver);
 	        login.open(baseUrl);

@@ -21,16 +21,16 @@ public class NavigationTest extends BaseTest{
 
 	@BeforeMethod
     public void setup() {
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
+		 LoginPage login = new LoginPage(driver);
+	   	 login.open(baseUrl);
 
-        LoginPage login = new LoginPage(driver);
+      
         AccountOverviewPage overview = new AccountOverviewPage(driver);
         AccountDetailsPage details = new AccountDetailsPage(driver);
 
         login.login("Diya", "Good");
     }
-	@Test
+	@Test(description="navigateThroughTopNavLinks")
 	public void navigateThroughTopNavLinks() {
 
 	    NavigationPage nav = new NavigationPage(driver);
@@ -55,7 +55,7 @@ public class NavigationTest extends BaseTest{
 	    Assert.assertTrue(driver.getPageSource().contains("Customer Care"),
 	            "Contact page not loaded");
 	}
-	@Test
+	@Test(description="verifyLogoRedirectsToHome")
 	public void verifyLogoRedirectsToHome() throws InterruptedException {
 		Thread.sleep(3000);
 
@@ -67,7 +67,7 @@ public class NavigationTest extends BaseTest{
 	    Assert.assertTrue(driver.getTitle().contains("ParaBank"),
 	            "Logo did not redirect to Home page");
 	}
-	@Test
+	@Test(description="validateButtonsVisibilityAndClickability")
 	public void validateButtonsVisibilityAndClickability() throws InterruptedException {
 		Thread.sleep(3000);
 	    driver.findElement(By.linkText("Transfer Funds")).click();
@@ -81,7 +81,7 @@ public class NavigationTest extends BaseTest{
 	    Assert.assertTrue(transferBtn.isEnabled(),
 	            "Transfer button not clickable");
 	}
-	@Test
+	@Test(description="validateContactSuccessPopup")
 	public void validateContactSuccessPopup() {
 
 		 driver.findElement(By.linkText("Contact Us")).click();

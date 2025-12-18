@@ -15,17 +15,18 @@ public class CustomerSupportTest extends BaseTest {
 	
 	@BeforeMethod
     public void setup() {
-        driver = new ChromeDriver();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
+		  LoginPage login = new LoginPage(driver);
+		login = new LoginPage(driver);
+   	 login.open(baseUrl);
 
-        LoginPage login = new LoginPage(driver);
+      
         AccountOverviewPage overview = new AccountOverviewPage(driver);
         AccountDetailsPage details = new AccountDetailsPage(driver);
 
         login.login("Diya", "Good");
     }
 
-	@Test
+	@Test(description="Open customer support form")
 	public void openCustomerSupportForm() {
 
 	    driver.findElement(By.linkText("Contact Us")).click();
@@ -35,7 +36,7 @@ public class CustomerSupportTest extends BaseTest {
 	        "Customer support page not opened"
 	    );
 	}
-	@Test
+	@Test(description="submitSupportFormWithValidDetails")
 	public void submitSupportFormWithValidDetails() {
 
 	    driver.findElement(By.linkText("Contact Us")).click();
@@ -57,7 +58,7 @@ public class CustomerSupportTest extends BaseTest {
 	        "Success message not shown after form submission"
 	    );
 	}
-	@Test
+	@Test(description="submitSupportFormWithEmptyFields")
 	public void submitSupportFormWithEmptyFields() {
 
 	    driver.findElement(By.linkText("Contact Us")).click();
@@ -72,7 +73,7 @@ public class CustomerSupportTest extends BaseTest {
 	        "Form submitted successfully with empty fields"
 	    );
 	}
-	@Test
+	@Test(description="verifySupportFormSuccessMessage")
 	public void verifySupportFormSuccessMessage() {
 
 	    driver.findElement(By.linkText("Contact Us")).click();

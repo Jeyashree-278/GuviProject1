@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+<parameter name="browser" value="chrome"/>
+  <test  name="Chrome Test">
+    <classes>
+     
+      <class name="com.banking.tests.LoginTest"/>
+      <class name="com.banking.tests.AccountTest"/>
+      <class name="com.banking.tests.LoanRequestTest"/>
+      <class name="com.banking.tests.FundTransferTest"/>
+      <class name="com.banking.tests.SupportTest"/>
+      <class name="com.banking.tests.CustomerSupportTest"/>
+      <class name="com.banking.tests.NavigationTest"/>
+      
+    </classes>
+  </test> 
+  
+    
+    
+     <test name="FireFox Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            
+      <class name="com.banking.tests.LoginTest"/>
+      <class name="com.banking.tests.AccountTest"/>
+      <class name="com.banking.tests.LoanRequestTest"/>
+      <class name="com.banking.tests.FundTransferTest"/>
+      <class name="com.banking.tests.SupportTest"/>
+      <class name="com.banking.tests.CustomerSupportTest"/>
+      <class name="com.banking.tests.NavigationTest"/>
+        </classes><!-- Test -->
+     </test>
+</suite> <!-- Suite -->
